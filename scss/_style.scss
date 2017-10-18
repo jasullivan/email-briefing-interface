@@ -1,0 +1,134 @@
+// ************************
+// general body
+// ************************
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+  font-family: arial, sans-serif;
+  color: $lightGrey;
+  padding: 1rem 0 0 0;
+}
+main {
+  position: relative;
+}
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  @include clearfix;
+}
+// ************************
+// general body end
+// ************************
+
+// ************************
+// general layout and styling
+// ************************
+ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 2px;
+  &.main-nav-link {
+    padding:1rem;
+  }
+  &:hover {
+    color:$mandy;
+  }
+}
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0 0 0.5rem;
+	margin: 0;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+.opened {
+  display: block;
+}
+.closed {
+  display: none;
+}
+// ************************
+// general layout and styling
+// ************************
+
+// ************************
+// header section
+// ************************
+header {
+  text-align: center;
+  img {
+    width: 12rem;
+  }
+}
+nav.main-nav {
+  background: $persianGreen;
+  color: $white;
+}
+// ************************
+// header section
+// ************************
+
+// ************************
+// buttons and input fields
+// ************************
+.textImage-selector {display: inline-block;}
+// input placeholders
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $extraLightGrey;
+  font-size: 12px;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: $extraLightGrey;
+  font-size: 12px;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: $extraLightGrey;
+  font-size: 12px;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: $extraLightGrey;
+  font-size: 12px;
+}
+// input placeholders
+input {
+  outline-color: $persianGreen;
+  outline-width: 1px;
+  // outline: none;
+}
+// buttons
+button {
+    background-color: #f0f0f0;
+    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 1.5em;
+    line-height: 1.5;
+    margin: 0.25em;
+    padding: 0 1em;
+    outline: none;
+    &:hover {background: $white;}
+    &:active {background: $lightGrey;}
+}
+// buttons
+// ************************
+// buttons and input fields
+// ************************

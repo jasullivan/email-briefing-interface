@@ -1,0 +1,291 @@
+// slider test
+.main {
+  font-family:Arial;
+  width:100%;
+  display:block;
+  margin:0 auto;
+}
+.slider h3 {
+	background: #eee;
+	color: #3498db;
+	font-size: 36px;
+	line-height: 100px;
+	margin: 10px;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
+.slider-for h3 {
+	margin-left:0;
+	margin-right:0;
+}
+// slider test
+
+
+// ************************
+// general components
+// ************************
+.element {
+  padding: 1rem;
+}
+// ************************
+// general components
+// ************************
+
+// ************************
+// components to choose email elements
+// ************************
+.email-component-wrapper {
+  position: absolute;
+  width: 100%;
+  @include tablet {
+    width: 46%;
+    max-width: 650px;
+  }
+}
+.email-component-choice {
+  height: auto;
+  background: $extraLightGrey;
+  padding: 1rem;
+  .email-component, .email-component-change {
+    padding: 0.5rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    img {
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+}
+// ************************
+// components to choose email elements
+// ************************
+
+// ************************
+// edit panel tabs
+// ************************
+.tab-links a {
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:$persianGreen;
+    font-weight:400;
+    color:#ffffff;
+    transition: all linear 0.15s;
+    &:hover {
+    	background:#478BA5;
+    }
+}
+li.active a, li.active a:hover {
+    background:#fff;
+    color:#4c4c4c;
+}
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    background:#fff;
+    height: 350px;
+    .tab {
+	    display:none;
+	}	
+    .active {
+	    display:block;
+	}
+}
+.slick-prev:before, .slick-next:before {color:$grey;}
+// ************************
+// edit panel tabs ends
+// ************************
+
+// ************************
+// edit panel text tab
+// ************************
+.text-color-edit {
+	width: 300px;
+	margin-bottom: 1rem;
+	.input-wrap {
+		width: 100%;
+		input {
+			width: 56%;
+			border: 1px solid #ccc;
+			height: 2em;
+			line-height: 1.5;
+			padding: 5px 15px 5px 12px;
+		}
+		button {
+			width: 36%;
+			margin: 0 0 2px 0;
+			height: 2em;
+		}
+	}
+	.col-palette {
+		width: 100%;
+	}
+}
+// ************************
+// edit panel text tab
+// ************************
+
+
+// ************************
+//    colour picker
+// ************************
+.col-palette {
+	@include clearfix();
+}
+.pickerWrap {
+	@include clearfix();
+	position: relative;
+	.swatch {
+		position: relative;
+		width: 35px;
+		height: 35px;
+// 		margin-right: 10px;
+		background: $white;
+		border: 1px solid $lightGrey;
+		border-radius: 2px;
+		float: left;
+		overflow: hidden!important;
+		@include clearfix();
+		&.noColor {
+			&:after {
+				bottom: calc(50% - 1px);
+				left: -11px;
+				background: #DA2218;
+				content: "";
+				height: 2px;
+				width: 65px;
+				position: absolute;
+				z-index: 100;
+				pointer-events: none;
+				-ms-transform: rotate(-45deg);
+			    -webkit-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+		}
+	}
+	
+	.inputWrap {
+		border: 1px solid #999;
+		width: calc(100% - 55px);
+		float: left;
+		input {
+			padding:5px 15px 5px 12px
+		}
+	}
+}
+
+.pickerOutput {
+	width: calc(100% - 35px);
+	-webkit-user-select: all;
+	-moz-user-select: all;
+	-ms-user-select: all;
+	user-select: all; 
+	text-transform: uppercase;
+	@include clearfix();
+}
+.pickerTrigger {
+	float: right;
+	width: 35px;
+	height: 33px;
+	padding: 6px;
+	border-left: 1px solid $lightGrey;
+}
+.picker {
+// 	display: none;
+	width: 100%;
+	background: #eee;
+	border-radius: 2px;
+	position: absolute;
+	left: 0;
+	top: calc(100% + 5px);
+	z-index: 100;
+	padding: 10px 5px 0px 5px;
+	&:after {
+		bottom: 100%;
+		left: calc(100% - 24px);
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		z-index: 100;
+		pointer-events: none;
+		border-color: rgba(136, 183, 213, 0);
+		border-bottom-color: #eee;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+/*
+	@include bp(med) {
+		margin-top: -15px;
+	}
+*/
+	ul {
+		width: 100%;
+		@include clearfix();
+	}
+	p {
+		margin: 0 5px;
+	}
+	li {
+		width: calc(20% - 10px);
+		height: 25px;
+		margin: 0px 5px 10px 5px;
+		border: 1px solid $lightGrey;
+		border-radius: 2px;
+		background: $white;
+		float: left;
+		cursor: pointer;
+		&.noColor {
+			text-align: center;
+			padding: 0;
+			position: relative;
+			overflow: hidden!important;
+			&:after {
+				bottom: calc(50% - 1px);
+				left: -5px;
+				background: #DA2218;
+				content: "";
+				height: 2px;
+				width: calc(100% + 10px);
+				position: absolute;
+				z-index: 100;
+				pointer-events: none;
+				-ms-transform: rotate(-35deg);
+			    -webkit-transform: rotate(-35deg);
+			    transform: rotate(-35deg);
+			}
+		}
+	}
+}
+// ************************
+//    colour picker
+// ************************
+
+// ************************
+// email canvas
+// ************************
+.email-canvas-wrapper {
+  position: absolute;
+  width: 100%;
+  right: -100%;
+  @include tablet {
+    width: 54%;
+    max-width: 750px;
+    position: relative;
+    left: 0;
+    float: right;
+  }
+}
+.email-canvas {
+  height: auto;
+  background: $white;
+  padding: 1rem;
+  border: 2px dashed;
+}
+// ************************
+// email canvas
+// ************************
+

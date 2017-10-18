@@ -1,0 +1,127 @@
+/* CALC STYLES */
+[class^="col-"] {
+ 	@include clearfix;
+}
+
+.leftandright {
+	width: 100%;
+	display: block;
+}
+.test-left, .test-right {
+	width: 50%;
+	display: inline-block;
+}
+.test-left {background: red;}
+.test-right {background: green;}
+
+
+.col-sml-1 {
+	width: calc(100% / 12);
+	float: left;
+	display: inline-block;
+}
+.col-sml-2 {
+	width: calc(100% / 12 * 2);
+	float: left;
+	display: inline-block;
+}
+.col-sml-3 {
+	width: calc(100% / 12 * 3);
+	float: left;
+	display: inline-block;
+}
+.col-sml-4 {
+	width: calc(100% / 12 * 4);
+	float: left;
+	background: red;
+	display: inline-block;
+}
+.col-sml-5 {
+	width: calc(100% / 12 * 5);
+	float: left;
+}
+.col-sml-6 {
+	width: calc(100% / 12 * 6);
+	float: left;
+}
+.col-sml-7 {
+	width: calc(100% / 12 * 7);
+	float: left;
+	display: inline-block;
+}
+.col-sml-8 {
+	width: calc(100% / 12 * 8);
+	float: left;
+	display: inline-block;
+}
+.col-sml-9 {
+	width: calc(100% / 12 * 9);
+	float: left;
+}
+.col-sml-10 {
+	width: calc(100% / 12 * 10);
+	float: left;
+}
+.col-sml-11 {
+	width: calc(100% / 12 * 11);
+}
+.col-sml-12 {
+	width: 100%;
+	display: block;
+}
+@media (min-width: 800px) {
+
+	.col-med-1 {
+		width: calc(100% / 12);
+		float: left;
+	}
+	.col-med-2 {
+		width: calc(100% / 12 * 2);
+		float: left;
+	}
+	.col-med-3 {
+		width: calc(100% / 12 * 3);
+		float: left;
+	}
+	.col-med-4 {
+		width: calc(100% / 12 * 4);
+		float: left;
+		display: inline-block;
+	}
+	.col-med-5 {
+		width: calc(100% / 12 * 5);
+		float: left;
+		display: inline-block;
+	}
+	.col-med-6 {
+		width: calc(100% / 12 * 6);
+		float: left;
+	}
+	.col-med-7 {
+		width: calc(100% / 12 * 7);
+		float: left;
+		display: inline-block;
+	}
+	.col-med-8 {
+		width: calc(100% / 12 * 8);
+		float: left;
+		display: inline-block;
+	}
+	.col-med-9 {
+		width: calc(100% / 12 * 9);
+		float: left;
+		background: yellow;
+	}
+	.col-med-10 {
+		width: calc(100% / 12 * 10);
+		float: left;
+	}
+	.col-med-11 {
+		width: calc(100% / 12 * 11);
+		float: left;
+	}
+	.col-med-12 {
+		width: 100%;
+		display: block;
+	}
+}
