@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><!-- <link rel="stylesheet" href="../css/fonts.css"> -->
+	<!-- <link rel="stylesheet" href="../css/style.css"> -->
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link href="../css/global.css" rel="stylesheet">
+	<link href="../img/logos/studioIcon.png" rel="shortcut icon" type="image/ico">
+	<title>Email Briefing Interface</title>
+</head>
+<body>
+	<main role="”main”">
+		<header>
+			<div class="logo element"><img alt="Studio Logo" src="../img/logos/studioLogo.svg"></div>
+			<nav class="element main-nav">
+				<h1>Email Briefing Interface</h1>
+				<ul class="">
+					<li>
+						<a class="main-nav-link logoNavButton" href="#">logo and nav</a>
+					</li>
+					<li>
+						<a class="main-nav-link mainBannerButton" href="#">Main Banner</a>
+					</li>
+					<li>
+						<a class="main-nav-link fullWidthBannerButton" href="#">Full Width Panel</a>
+					</li>
+					<li>
+						<a class="main-nav-link twoPanelButton" href="#">Two Panel</a>
+					</li>
+					<li>
+						<a class="main-nav-link threePanelButton" href="#">Three Panel</a>
+					</li>
+					<li>
+						<a class="main-nav-link footerButton" href="#">Footer</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="wrapper">
+			<!-- ************************
+          email component selections
+      ************************* -->
+			<section class="email-component-wrapper">
+				<section class="logoNav" id="logo-nav" type="email-component-wrapper">
+					<div class="element">
+						<h2>Logo and navigation choice</h2>
+						<div class="email-component-choice">
+							<div class="email-component" element-item="logoNavOne" type="logo-nav-split">
+							<h3>Warner logo</h3><img alt="Warner" src="../img/warner_nav.gif"></div>
+							<div class="email-component" element-item="logoNavTwo" type="logo-nav-split">
+							<h3>Concierge Club logo</h3><img alt="Warner" src="../img/concierge_nav.gif"></div>
+							<div class="email-component-change">
+								<h3>Change navigation links</h3>
+								<div class="">
+									<input name="firstlink" placeholder="Hotels" type="text"> <button class="submit" type="button">Confirm</button>
+								</div>
+								<div class="">
+									<input name="secondlink" placeholder="Discover" type="text"> <button class="submit" type="button">Confirm</button>
+								</div>
+								<div class="">
+									<input name="thirdlink" placeholder="Breaks" type="text"> <button class="submit" type="button">Confirm</button>
+								</div>
+								<div class="">
+									<input name="fourthlink" placeholder="Offers" type="text"> <button class="submit" type="button">Confirm</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mainBanner closed" id="main-banner" type="email-component-wrapper">
+					<div class="element">
+						<h2>Main banner choice</h2>
+						<div class="email-component-choice">
+							<div class="email-component" element-item="mainBannerOne" type="main-banner">
+								<h3>Main banner</h3>
+								<img alt="Warner" src="../img/main_banner_one.jpg">
+							</div>
+							<div class="email-component" element-item="mainBannerTwo" type="main-banner">
+								<h3>Main banner</h3>
+								<img alt="Warner" src="../img/main_banner_two.jpg">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="fullWidthBanner closed" id="full-width-banner" type="email-component-wrapper">
+					<div class="element">
+						<h2>Full width banner choice</h2>
+						<div class="email-component-choice">
+							<div class="email-component" element-item="fullWidthBannerOne" type="full-width-banner">
+								<h3>Full width banner</h3>
+								<img alt="Warner" src="../img/full_width_one.jpg">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="twoPanel closed" id="two-panel-split" type="email-component-wrapper">
+					<div class="element">
+						<h2>Two panel split</h2>
+						<div class="email-component-choice">
+							<div class="email-component" element-item="twoPanelOne" type="two-panel-split">
+							<h3>Two panel split</h3><img alt="Warner" src="../img/2_panel_split.jpg"></div>
+							<div class="email-component" element-item="twoPanelTwo" type="two-panel-split">
+							<h3>Two panel split 2</h3><img alt="Warner" src="../img/2_panel_split.jpg"></div>
+							<div class="email-component-change">
+								<h3>Edit panel</h3>
+								<div class="tabs">
+									<!--  adding tabs -->
+									<nav class="tab-nav">
+										<ul class="tab-links">
+											<li class="active">
+												<a href="#tab1">Orientation</a>
+											</li>
+											<li>
+												<a href="#tab2">Image</a>
+											</li>
+											<li>
+												<a href="#tab3">Text</a>
+											</li>
+										</ul>
+									</nav>
+									<div class="tab-content">
+										<div class="tab active" id="tab1">
+											<div class="element">
+												<h4>Choose text/image orientation</h4>
+												<!-- re-set radio buttons -->
+												<div class="element textImage-selector">
+													<h4>Left hand-side:</h4>
+													<form>
+														<input class="lefthand-selector" name="tab" text-image-selector="text-left" type="radio" value="showImg">Text <input class="lefthand-selector" name="tab" text-image-selector="image-left" type="radio" value="hideImg">Image
+													</form>
+												</div>
+												<div class="element textImage-selector">
+													<h4>Right hand-side:</h4>
+													<form>
+														<input class="righthand-selector" name="tab" text-image-selector="text-right" type="radio" value="showImg">Text <input class="righthand-selector" name="tab" text-image-selector="image-right" type="radio" value="hideImg">Image
+													</form>
+												</div>
+												<!-- re-set radio buttons -->
+											</div>
+										</div>
+										<div class="tab" id="tab2">
+											<div class="element">
+												<h4>Choose your image type</h4>
+												<!-- slider test -->
+												<div class="main">
+													<div class="slider slider-for">
+														<div>
+															<h3>1</h3>
+														</div>
+														<div>
+															<h3>2</h3>
+														</div>
+														<div>
+															<h3>3</h3>
+														</div>
+														<div>
+															<h3>4</h3>
+														</div>
+														<div>
+															<h3>5</h3>
+														</div>
+													</div>
+													<div class="slider slider-nav">
+														<div>
+															<h3>1</h3>
+														</div>
+														<div>
+															<h3>2</h3>
+														</div>
+														<div>
+															<h3>3</h3>
+														</div>
+														<div>
+															<h3>4</h3>
+														</div>
+														<div>
+															<h3>5</h3>
+														</div>
+													</div>
+												</div>
+												<!-- slider test -->
+											</div>
+										</div>
+										<div class="tab" id="tab3">
+											<div class="element">
+												<h4>Edit text stuff:</h4>
+												<div class="text-color-edit">
+													<div class="input-wrap">
+														<input class="new-headerLeft" id="" name="" type="" value=""> <button class="headerLeftButton" name="header" type="button" value="submit">Header</button>
+													</div>
+													<div class="col-palette">
+														<div class="pickerWrap headerLeft" palette="text">
+															<div class="swatch"></div>
+															<div class="field inputWrap">
+																<input class="pickerOutput" maxlength="7" name="" placeholder="#" type="text" value="#">
+																<div class="pickerTrigger"><img src="../img/colorPicker.svg"></div>
+															</div>
+															<div class="picker headerLeft"></div>
+														</div>
+													</div>
+												</div>
+												<div class="text-color-edit">
+													<div class="input-wrap">
+														<input class="new-copyLeft" id="" name="" type="" value=""> <button class="copyLeftButton" name="copy" type="button" value="submit">Paragraph</button>
+													</div>
+													<div class="col-palette">
+														<div class="pickerWrap copyLeft" palette="text">
+															<div class="swatch"></div>
+															<div class="field inputWrap">
+																<input class="pickerOutput" maxlength="7" name="" placeholder="#" type="text" value="#">
+																<div class="pickerTrigger"><img src="../img/colorPicker.svg"></div>
+															</div>
+															<div class="picker copyLeft"></div>
+														</div>
+													</div>
+												</div>
+												<div class="text-color-edit">
+													<div class="input-wrap">
+														<input class="new-buttonLeft" id="" name="" type="" value=""> <button class="buttonLeftButton" name="copy" type="button" value="submit">Button</button>
+													</div>
+													<div class="col-palette">
+														<div class="pickerWrap buttonLeft" palette="text">
+															<div class="swatch"></div>
+															<div class="field inputWrap">
+																<input class="pickerOutput" maxlength="7" name="" placeholder="#" type="text" value="#">
+																<div class="pickerTrigger"><img src="../img/colorPicker.svg"></div>
+															</div>
+															<div class="picker buttonLeft"></div>
+														</div>
+													</div>
+													<div class="col-palette">
+														<div class="pickerWrap buttonLeft" palette="background">
+															<div class="swatch"></div>
+															<div class="field inputWrap">
+																<input class="pickerOutput" maxlength="7" name="" placeholder="#" type="background" value="#">
+																<div class="pickerTrigger"><img src="../img/colorPicker.svg"></div>
+															</div>
+															<div class="picker buttonLeft"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--  adding tabs -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- ************************
+          email component selections
+      ************************* -->
+			<!-- ************************
+          email canvas
+      ************************* -->
+			<section class="email-canvas-wrapper">
+				<div class="element">
+					<h2>Email canvas</h2>
+					<div class="email-canvas">
+						<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" id="wrapper" style="border-collapse: collapse; border-spacing: 0; table-layout: fixed;" width="100%">
+							<tr>
+								<td align="center">
+									<table border="0" cellpadding="0" cellspacing="0" class="canvas-section-1 resize-100 output-logo-nav-split" summary="" width="600">
+										<!--nav-->
+										<tr>
+											<td style="text-align:center;"></td>
+										</tr>
+										<!-- nav ends -->
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" class="canvas-section-2 resize-100 output-main-banner" summary="" width="600">
+										<!--banner-->
+										<tr>
+											<td style="text-align:center;"></td>
+										</tr>
+										<!-- banner ends -->
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" class="canvas-section-3 resize-100 output-full-width-banner" summary="" width="600">
+										<!--full width text-->
+										<tr>
+											<td style="text-align:center;"></td>
+										</tr>
+										<!-- full width text ends -->
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" class="canvas-section-4 resize-100 output-two-panel-split" summary="" width="600">
+										<!--nav-->
+										<tr>
+											<td style="text-align:center;"></td>
+										</tr>
+										<!-- nav ends -->
+									</table>
+
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+			<!-- ************************
+          email canvas
+      ************************* -->
+		</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script> <!-- <script src="../js/jquery-ui.min.js">
+    </script> -->
+	 <!-- <script src="../js/colors.js" type="text/javascript">
+    </script> -->
+
+	<script src="../js/variables.js" type="text/javascript">
+	</script> <!-- <script src="../js/emailElements.js" type="text/javascript">
+    </script> -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js">
+	</script>
+	<script src="../js/script.js" type="text/javascript">
+	</script>
+</body>
+</html>
